@@ -7,7 +7,7 @@ header {
 }
 
 body {
-    background: #2B6968;
+    background: #6C332F;
     color: #D4A163;
 }
 
@@ -16,5 +16,5 @@ h2 {
 }
 
 .intro {
-  color: white
+  color: grey;
 }
