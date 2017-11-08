@@ -1,12 +1,20 @@
 header {
     text-align: center;
-    color: white;
-    background: black;
+    color: #D4A163;
+    background: #2B6968;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
 body {
-    background: black;
-    color: white;
+    background: #2B6968;
+    color: #D4A163;
+}
+
+h2 {
+  color: grey;
+}
+
+.intro {
+  color: white
 }
