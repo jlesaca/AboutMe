@@ -23,6 +23,7 @@ if(myName === 'YES' || myName === 'Y') {
 }
 jordanNamefunction();
 
+function isStudent(){
 var student = prompt('Am I a student at CodeFellows?').toUpperCase();
 if(student === 'YES' || student === 'Y') {
   console.log('student', student);
@@ -32,6 +33,8 @@ if(student === 'YES' || student === 'Y') {
   console.log('student', student);
   alert('Come on ' + userName + ', Seriously though?');
 }
+}
+isStudent();
 
 var homeTown = prompt('Am I from the bay?').toLowerCase();
 if(homeTown === 'no' || homeTown === 'n') {
