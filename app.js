@@ -1,5 +1,7 @@
 'use strict';
 
+
+
 var userName = prompt('hello there! May I have your name?')
 console.log('user name', userName);
 alert('welcome ' + userName + '!');
@@ -12,7 +14,7 @@ if(myName === 'YES' || myName === 'Y') {
 } else {
   console.log('my name', myName);
   alert('Noooope, my name is Jordan...')
-};
+}
 
 var student = prompt('Am I a student at CodeFellows?');
 var student = student.toUpperCase();
@@ -22,7 +24,7 @@ if(student === 'YES' || student === 'Y') {
 } else {
   console.log('student', student)
   alert('come on ' + userName + ', Seriously though?')
-};
+}
 
 var homeTown = prompt('Am I from the bay?');
 var homeTown = homeTown.toLowerCase();
@@ -32,7 +34,7 @@ if(homeTown === 'no' || homeTown === 'n') {
 } else {
   console.log('hometown', homeTown);
   alert('Nope, ' + userName + ', I born and raised in Seattle!')
-};
+}
 
 var abroad = prompt('Have I lived abroad before?');
 var abroad = abroad.toLowerCase();
@@ -42,22 +44,22 @@ if(abroad === 'yes' || abroad === 'y') {
 } else {
   console.log('study abroad', abroad);
   alert('Womp womp, I use to live in South Korea.')
-};
+}
 
 var coding = prompt('Do I love coding?');
 var coding = coding.toLowerCase();
 if(coding === 'yes' || coding === 'y') {
   console.log('coding', coding);
-  alert('You got that right ' + userName + '!')
+  alert('You got that right ' + userName + '!');
 } else {
   console.log('coding', coding);
   alert('Womp womp. ' + userName + ', You\'re wrong. Thank you for trying!')
-};
+}
 
 
 
 for(var i = 0; i < 4; i++){
-  var doctorWho = prompt('Here\'s a fun random question! Do you know what number doctor Jodie Whittaker will be on Doctor Who? Pick a number between 1 - 15')
+  var doctorWho = prompt('Here\'s a fun random question! Do you know what number doctor Jodie Whittaker will be on Doctor Who? Pick a number between 1 - 15');
   console.log(doctorWho[i]);
   if(doctorWho === '13') {
     console.log('Doctor Who', doctorWho);
@@ -70,4 +72,13 @@ for(var i = 0; i < 4; i++){
     console.log('Doctor Who', doctorWho);
     alert('that\'s too low');
   }
+}
+
+var studied = ['seattle', 'seoul', 'beijing'];
+for(var j = 0; j < 6; j++){
+  var guessStudied = prompt('I\'ve studied in a number of major cities around the world. Can you guess which ones? Here is a hint. Washington State, South Korea, and China.');
+  console.log(guessStudied[j]);
+  if(studied.includes(guessStudied));
+  alert('thats right!');
+  break;
 }
