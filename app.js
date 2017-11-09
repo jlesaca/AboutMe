@@ -3,9 +3,12 @@
 var score = 0;
 console.log('score', score);
 
+function userNameFunction(){
 var userName = prompt('hello there! May I have your name?');
 console.log('user name', userName);
 alert('welcome ' + userName + '!');
+}
+userNameFunction();
 
 var myName = prompt('Let me start off easy! Is my name Jordan?').toUpperCase();
 if(myName === 'YES' || myName === 'Y') {
