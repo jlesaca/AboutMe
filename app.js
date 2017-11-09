@@ -1,8 +1,8 @@
-'use script';
+'use strict';
 
 var userName = prompt('hello there! May I have your name?')
-  console.log('user name', userName);
-  alert('welcome ' + userName + '!');
+console.log('user name', userName);
+alert('welcome ' + userName + '!');
 
 var myName = prompt('Let me start off easy! Is my name Jordan?')
 var myName = myName.toUpperCase();
@@ -53,3 +53,21 @@ if(coding === 'yes' || coding === 'y') {
   console.log('coding', coding);
   alert('Womp womp. ' + userName + ', You\'re wrong. Thank you for trying!')
 };
+
+
+
+for(var i = 0; i < 4; i++){
+  var doctorWho = prompt('Here\'s a fun random question! Do you know what number doctor Jodie Whittaker will be on Doctor Who? Pick a number between 1 - 15')
+  console.log(doctorWho[i]);
+  if(doctorWho === '13') {
+    console.log('Doctor Who', doctorWho);
+    alert('that\'s correct!');
+    break;
+  } else if(doctorWho > '13'){
+    console.log('Doctor Who', doctorWho);
+    alert('that\'s too high');
+  } else if(doctorWho < '13'){
+    console.log('Doctor Who', doctorWho);
+    alert('that\'s too low');
+  }
+}

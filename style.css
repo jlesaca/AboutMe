@@ -18,3 +18,8 @@ h2 {
 .intro {
   color: grey;
 }
+
+ol {
+  border: 2px dashed teal;
+  width: 500px;
+}
