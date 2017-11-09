@@ -91,4 +91,4 @@ for(var j = 0; j < 6; j++){
   }
 }
 
-alert('out of 7, you got' + score + 'correct! Coolio!');
+alert(userName + ' ! out of 7, you got ' + score + 'correct! Coolio!');
