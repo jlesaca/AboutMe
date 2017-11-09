@@ -1,59 +1,60 @@
 'use strict';
 
+var score = 0;
+console.log('score', score);
 
-
-var userName = prompt('hello there! May I have your name?')
+var userName = prompt('hello there! May I have your name?');
 console.log('user name', userName);
 alert('welcome ' + userName + '!');
 
-var myName = prompt('Let me start off easy! Is my name Jordan?')
-var myName = myName.toUpperCase();
+var myName = prompt('Let me start off easy! Is my name Jordan?').toUpperCase();
 if(myName === 'YES' || myName === 'Y') {
   console.log('my name', myName);
   alert(userName + ', you got it duuuude!');
+  score++;
 } else {
   console.log('my name', myName);
-  alert('Noooope, my name is Jordan...')
+  alert('Noooope, my name is Jordan...');
 }
 
-var student = prompt('Am I a student at CodeFellows?');
-var student = student.toUpperCase();
+var student = prompt('Am I a student at CodeFellows?').toUpperCase();
 if(student === 'YES' || student === 'Y') {
   console.log('student', student);
-  alert('That\'s right ' + userName + '!')
+  alert('That\'s right ' + userName + '!');
+  score++;
 } else {
-  console.log('student', student)
-  alert('come on ' + userName + ', Seriously though?')
+  console.log('student', student);
+  alert('come on ' + userName + ', Seriously though?');
 }
 
-var homeTown = prompt('Am I from the bay?');
-var homeTown = homeTown.toLowerCase();
+var homeTown = prompt('Am I from the bay?').toLowerCase();
 if(homeTown === 'no' || homeTown === 'n') {
   console.log('hometown', homeTown);
-  alert('That\'s correct' + userName + '!')
+  alert('That\'s correct' + userName + '!');
+  score++;
 } else {
   console.log('hometown', homeTown);
-  alert('Nope, ' + userName + ', I born and raised in Seattle!')
+  alert('Nope, ' + userName + ', I born and raised in Seattle!');
 }
 
-var abroad = prompt('Have I lived abroad before?');
-var abroad = abroad.toLowerCase();
+var abroad = prompt('Have I lived abroad before?').toLowerCase();
 if(abroad === 'yes' || abroad === 'y') {
   console.log('study abroad', abroad);
-  alert('That\'s right! I use to live in South Korea')
+  alert('That\'s right! I use to live in South Korea');
+  score++;
 } else {
   console.log('study abroad', abroad);
-  alert('Womp womp, I use to live in South Korea.')
+  alert('Womp womp, I use to live in South Korea.');
 }
 
-var coding = prompt('Do I love coding?');
-var coding = coding.toLowerCase();
+var coding = prompt('Do I love coding?').toLowerCase();
 if(coding === 'yes' || coding === 'y') {
   console.log('coding', coding);
   alert('You got that right ' + userName + '!');
+  score++;
 } else {
   console.log('coding', coding);
-  alert('Womp womp. ' + userName + ', You\'re wrong. Thank you for trying!')
+  alert('Womp womp. ' + userName + ', You\'re wrong. Thank you for trying!');
 }
 
 
@@ -64,6 +65,7 @@ for(var i = 0; i < 4; i++){
   if(doctorWho === '13') {
     console.log('Doctor Who', doctorWho);
     alert('that\'s correct!');
+    score++;
     break;
   } else if(doctorWho > '13'){
     console.log('Doctor Who', doctorWho);
@@ -74,11 +76,19 @@ for(var i = 0; i < 4; i++){
   }
 }
 
+
 var studied = ['seattle', 'seoul', 'beijing'];
 for(var j = 0; j < 6; j++){
-  var guessStudied = prompt('I\'ve studied in a number of major cities around the world. Can you guess which ones? Here is a hint. Washington State, South Korea, and China.');
+  var guessStudied = prompt('I\'ve studied in a number of major cities around the world. Can you guess which ones? Here is a hint. Washington State, South Korea, and China.').toLowerCase();
   console.log(guessStudied[j]);
-  if(studied.includes(guessStudied));
-  alert('thats right!');
-  break;
+  if(studied.includes(guessStudied)){
+    alert('thats right! I have studied in Seattle, Seoul, and Beijing if you couldn\'t guess them all');
+    score++;
+    break;
+  } else {
+    console.log('false', guessStudied);
+    alert('wrong');
+  }
 }
+
+alert('out of 7, you got' + score + 'correct! Coolio!');
