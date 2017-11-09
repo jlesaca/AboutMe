@@ -62,6 +62,7 @@ if(abroad === 'yes' || abroad === 'y') {
 }
 abroadFunction();
 
+function loveCodingFunction(){
 var coding = prompt('Do I love coding?').toLowerCase();
 if(coding === 'yes' || coding === 'y') {
   console.log('coding', coding);
@@ -71,9 +72,11 @@ if(coding === 'yes' || coding === 'y') {
   console.log('coding', coding);
   alert('Womp womp. ' + userName + ', You\'re wrong. Thank you for trying!');
 }
+}
+loveCodingFunction();
 
 
-
+function nthDoctor(){
 for(var i = 0; i < 4; i++){
   var doctorWho = prompt('Here\'s a fun random question! Do you know what number doctor Jodie Whittaker will be on Doctor Who? Pick a number between 1 - 15');
   console.log(doctorWho[i]);
@@ -90,8 +93,10 @@ for(var i = 0; i < 4; i++){
     alert('that\'s too low');
   }
 }
+}
+nthDoctor();
 
-
+function citiesStudied(){}
 var studied = ['seattle', 'seoul', 'beijing'];
 for(var j = 0; j < 6; j++){
   var guessStudied = prompt('I\'ve studied in a number of major cities around the world. Can you guess which ones? Here is a hint. Washington State, South Korea, and China.').toLowerCase();
@@ -105,5 +110,6 @@ for(var j = 0; j < 6; j++){
     alert('Wrong');
   }
 }
+citiesStudied();
 
 alert(userName + ' ! out of 7, you got ' + score + ' correct! Coolio!');
