@@ -36,6 +36,7 @@ if(student === 'YES' || student === 'Y') {
 }
 isStudent();
 
+function homeTownFunction(){
 var homeTown = prompt('Am I from the bay?').toLowerCase();
 if(homeTown === 'no' || homeTown === 'n') {
   console.log('hometown', homeTown);
@@ -45,6 +46,8 @@ if(homeTown === 'no' || homeTown === 'n') {
   console.log('hometown', homeTown);
   alert('Nope, ' + userName + ', I born and raised in Seattle!');
 }
+}
+homeTownFunction();
 
 var abroad = prompt('Have I lived abroad before?').toLowerCase();
 if(abroad === 'yes' || abroad === 'y') {
