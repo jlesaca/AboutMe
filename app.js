@@ -24,7 +24,7 @@ if(student === 'YES' || student === 'Y') {
   score++;
 } else {
   console.log('student', student);
-  alert('come on ' + userName + ', Seriously though?');
+  alert('Come on ' + userName + ', Seriously though?');
 }
 
 var homeTown = prompt('Am I from the bay?').toLowerCase();
@@ -82,13 +82,13 @@ for(var j = 0; j < 6; j++){
   var guessStudied = prompt('I\'ve studied in a number of major cities around the world. Can you guess which ones? Here is a hint. Washington State, South Korea, and China.').toLowerCase();
   console.log(guessStudied[j]);
   if(studied.includes(guessStudied)){
-    alert('thats right! I have studied in Seattle, Seoul, and Beijing if you couldn\'t guess them all');
+    alert('Thats right! I have studied in Seattle, Seoul, and Beijing if you couldn\'t guess them all');
     score++;
     break;
   } else {
     console.log('false', guessStudied);
-    alert('wrong');
+    alert('Wrong');
   }
 }
 
-alert(userName + ' ! out of 7, you got ' + score + 'correct! Coolio!');
+alert(userName + ' ! out of 7, you got ' + score + ' correct! Coolio!');
