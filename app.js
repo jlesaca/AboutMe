@@ -49,6 +49,7 @@ if(homeTown === 'no' || homeTown === 'n') {
 }
 homeTownFunction();
 
+function abroadFunction(){
 var abroad = prompt('Have I lived abroad before?').toLowerCase();
 if(abroad === 'yes' || abroad === 'y') {
   console.log('study abroad', abroad);
@@ -58,6 +59,8 @@ if(abroad === 'yes' || abroad === 'y') {
   console.log('study abroad', abroad);
   alert('Womp womp, I use to live in South Korea.');
 }
+}
+abroadFunction();
 
 var coding = prompt('Do I love coding?').toLowerCase();
 if(coding === 'yes' || coding === 'y') {
