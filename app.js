@@ -5,95 +5,96 @@ console.log('score', score);
 
 var userName = prompt('hello there! May I have your name?');
 function userNameFunction(){
-console.log('user name', userName);
-alert('welcome ' + userName + '!');
+  console.log('user name', userName);
+  alert('welcome ' + userName + '!');
 }
 userNameFunction();
 
 function jordanNamefunction(){
-var myName = prompt('Let me start off easy! Is my name Jordan?').toUpperCase();
-if(myName === 'YES' || myName === 'Y') {
-  console.log('my name', myName);
-  alert(userName + ', you got it duuuude!');
-  score++;
-} else {
-  console.log('my name', myName);
-  alert('Noooope, my name is Jordan...');
-}
+  var myName = prompt('Let me start off easy! Is my name Jordan?').toUpperCase();
+  if(myName === 'YES' || myName === 'Y') {
+    console.log('my name', myName);
+    alert(userName + ', you got it duuuude!');
+    score++;
+  } else {
+    console.log('my name', myName);
+    alert('Noooope, my name is Jordan...');
+  }
 }
 jordanNamefunction();
 
 function isStudent(){
-var student = prompt('Am I a student at CodeFellows?').toUpperCase();
-if(student === 'YES' || student === 'Y') {
-  console.log('student', student);
-  alert('That\'s right ' + userName + '!');
-  score++;
-} else {
-  console.log('student', student);
-  alert('Come on ' + userName + ', Seriously though?');
-}
+  var student = prompt('Am I a student at CodeFellows?').toUpperCase();
+  if(student === 'YES' || student === 'Y') {
+    console.log('student', student);
+    alert('That\'s right ' + userName + '!');
+    score++;
+  } else {
+    console.log('student', student);
+    alert('Come on ' + userName + ', Seriously though?');
+  }
 }
 isStudent();
 
 function homeTownFunction(){
-var homeTown = prompt('Am I from the bay?').toLowerCase();
-if(homeTown === 'no' || homeTown === 'n') {
-  console.log('hometown', homeTown);
-  alert('That\'s correct' + userName + '!');
-  score++;
-} else {
-  console.log('hometown', homeTown);
-  alert('Nope, ' + userName + ', I born and raised in Seattle!');
-}
+  var homeTown = prompt('Am I from the bay?').toLowerCase();
+  if(homeTown === 'no' || homeTown === 'n') {
+    console.log('hometown', homeTown);
+    alert('That\'s correct' + userName + '!');
+    score++;
+  } else {
+    console.log('hometown', homeTown);
+    alert('Nope, ' + userName + ', I born and raised in Seattle!');
+  }
 }
 homeTownFunction();
 
 function abroadFunction(){
-var abroad = prompt('Have I lived abroad before?').toLowerCase();
-if(abroad === 'yes' || abroad === 'y') {
-  console.log('study abroad', abroad);
-  alert('That\'s right! I use to live in South Korea');
-  score++;
-} else {
-  console.log('study abroad', abroad);
-  alert('Womp womp, I use to live in South Korea.');
-}
+  var abroad = prompt('Have I lived abroad before?').toLowerCase();
+  if(abroad === 'yes' || abroad === 'y') {
+    console.log('study abroad', abroad);
+    alert('That\'s right! I use to live in South Korea');
+    score++;
+  } else {
+    console.log('study abroad', abroad);
+    alert('Womp womp, I use to live in South Korea.');
+  }
 }
 abroadFunction();
 
 function loveCodingFunction(){
-var coding = prompt('Do I love coding?').toLowerCase();
-if(coding === 'yes' || coding === 'y') {
-  console.log('coding', coding);
-  alert('You got that right ' + userName + '!');
-  score++;
-} else {
-  console.log('coding', coding);
-  alert('Womp womp. ' + userName + ', You\'re wrong. Thank you for trying!');
-}
+  var coding = prompt('Do I love coding?').toLowerCase();
+  if(coding === 'yes' || coding === 'y') {
+    console.log('coding', coding);
+    alert('You got that right ' + userName + '!');
+    score++;
+  } else {
+    console.log('coding', coding);
+    alert('Womp womp. ' + userName + ', You\'re wrong. Thank you for trying!');
+  }
 }
 loveCodingFunction();
 
 
 function nthDoctor(){
-for(var i = 0; i < 4; i++){
-  var doctorWho = prompt('Here\'s a fun random question! Do you know what number doctor Jodie Whittaker will be on Doctor Who? Pick a number between 1 - 15');
-  console.log(doctorWho[i]);
-  if(doctorWho === '13') {
-    console.log('Doctor Who', doctorWho);
-    alert('that\'s correct!');
-    score++;
-    break;
-  } else if(doctorWho > '13'){
-    console.log('Doctor Who', doctorWho);
-    alert('that\'s too high');
-  } else if(doctorWho < '13'){
-    console.log('Doctor Who', doctorWho);
-    alert('that\'s too low');
+  for(var i = 0; i < 4; i++){
+    var doctorWho = prompt('Here\'s a fun random question! Do you know what number doctor Jodie Whittaker will be on Doctor Who? Pick a number between 1 - 15');
+    console.log(doctorWho[i]);
+    if(doctorWho === '13') {
+      console.log('Doctor Who', doctorWho);
+      alert('that\'s correct!');
+      score++;
+      break;
+    } else if(doctorWho > '13'){
+      console.log('Doctor Who', doctorWho);
+      alert('that\'s too high');
+    } else if(doctorWho < '13'){
+      console.log('Doctor Who', doctorWho);
+      alert('that\'s too low');
+    }
   }
 }
-}
+
 nthDoctor();
 
 function citiesStudied(){}
