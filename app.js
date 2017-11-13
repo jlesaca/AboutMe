@@ -6,7 +6,7 @@ console.log('score', score);
 var userName = prompt('hello there! May I have your name?');
 function userNameFunction(){
   console.log('user name', userName);
-  alert('welcome ' + userName + '!');
+  alert('Welcome, ' + userName + '!');
 }
 userNameFunction();
 
@@ -66,7 +66,7 @@ function loveCodingFunction(){
   var coding = prompt('Do I love coding?').toLowerCase();
   if(coding === 'yes' || coding === 'y') {
     console.log('coding', coding);
-    alert('You got that right ' + userName + '!');
+    alert('You got that right, ' + userName + '!');
     score++;
   } else {
     console.log('coding', coding);
@@ -85,10 +85,10 @@ function nthDoctor(){
       alert('that\'s correct!');
       score++;
       break;
-    } else if(doctorWho > '13'){
+    } else if(parseInt(doctorWho) > 13){
       console.log('Doctor Who', doctorWho);
       alert('that\'s too high');
-    } else if(doctorWho < '13'){
+    } else if(parseInt(doctorWho) < 13){
       console.log('Doctor Who', doctorWho);
       alert('that\'s too low');
     }
@@ -113,4 +113,4 @@ for(var j = 0; j < 6; j++){
 }
 citiesStudied();
 
-alert(userName + ' ! out of 7, you got ' + score + ' correct! Coolio!');
+alert(userName + ' ! out of 7 questions, you got ' + score + ' correct! Coolio!');
