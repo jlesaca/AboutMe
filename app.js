@@ -4,13 +4,13 @@ var score = 0;
 console.log('score', score);
 
 var userName = prompt('hello there! May I have your name?');
-function userNameFunction(){
+function userNameF(){
   console.log('user name', userName);
   alert('Welcome, ' + userName + '!');
 }
-userNameFunction();
+userNameF();
 
-function jordanNamefunction(){
+function jordanNameF(){
   var myName = prompt('Let me start off easy! Is my name Jordan?').toUpperCase();
   if(myName === 'YES' || myName === 'Y') {
     console.log('my name', myName);
@@ -21,7 +21,7 @@ function jordanNamefunction(){
     alert('Noooope, my name is Jordan...');
   }
 }
-jordanNamefunction();
+jordanNameF();
 
 function isStudent(){
   var student = prompt('Am I a student at CodeFellows?').toUpperCase();
@@ -36,7 +36,7 @@ function isStudent(){
 }
 isStudent();
 
-function homeTownFunction(){
+function homeTownF(){
   var homeTown = prompt('Am I from the bay?').toLowerCase();
   if(homeTown === 'no' || homeTown === 'n') {
     console.log('hometown', homeTown);
@@ -47,9 +47,9 @@ function homeTownFunction(){
     alert('Nope, ' + userName + ', I born and raised in Seattle!');
   }
 }
-homeTownFunction();
+homeTownF();
 
-function abroadFunction(){
+function abroadF(){
   var abroad = prompt('Have I lived abroad before?').toLowerCase();
   if(abroad === 'yes' || abroad === 'y') {
     console.log('study abroad', abroad);
@@ -60,9 +60,9 @@ function abroadFunction(){
     alert('Womp womp, I use to live in South Korea.');
   }
 }
-abroadFunction();
+abroadF();
 
-function loveCodingFunction(){
+function loveCodingF(){
   var coding = prompt('Do I love coding?').toLowerCase();
   if(coding === 'yes' || coding === 'y') {
     console.log('coding', coding);
@@ -73,7 +73,7 @@ function loveCodingFunction(){
     alert('Womp womp. ' + userName + ', You\'re wrong. Thank you for trying!');
   }
 }
-loveCodingFunction();
+loveCodingF();
 
 
 function nthDoctor(){
